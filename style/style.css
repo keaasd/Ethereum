@@ -524,20 +524,15 @@ button {
   height: 909px;
   text-align: center;
 }
-
-.hiro__img::before {
-  display: block;
-  position: absolute;
-  content: '';
-  background-image: url(../image/cript_Deskt.svg);
-  background-position: center;
-  background-size: cover;
-  top: 0;
-  right: 0;
-  width: 100%;
-  height: 100%;
-  z-index: -1;
-  filter: blur(283px);
+.hiro__image_blur {
+  max-width: 938px;
+}
+.hiro__image {
+  /* position: absolute; */
+  /* top: 0; */
+  /* max-width: 932px; */
+  /* right: 0; */
+  /* display: none; */
 }
 
 .hiro__text {
