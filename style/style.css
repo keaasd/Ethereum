@@ -232,6 +232,7 @@ button {
   align-items: center;
 
   padding: 81px 0;
+  padding: 81px 0 40px 0;
   display: grid;
   grid-template-columns: 1fr 3fr 2fr;
 
@@ -525,28 +526,32 @@ button {
   text-align: center;
 }
 .hiro__image_blur {
-  max-width: 938px;
+  filter: blur(283px);
 }
 .hiro__image {
-  /* position: absolute; */
-  /* top: 0; */
+  position: absolute;
+  top: 0;
   /* max-width: 932px; */
-  /* right: 0; */
+  right: 0;
   /* display: none; */
+  z-index: 1;
 }
 
 .hiro__text {
   flex: 0 0 51%;
-  margin-right: 20px;
+  /* margin-right: 20px; */
   padding-top: 50px;
+  padding-top: 94px;
   padding-left: max(40px, calc(100% - 1294px)/2);
 }
-
+.hiro__image_moby {
+  display: none;
+}
 .hiro__title {
   font-family: a_FuturicaLt, sans-serif;
   font-weight: 600;
   font-size: 60px;
-  font-size: calc((100vw - 768px)/(1920 - 768) * (60 - 40) + 40px);
+  font-size: calc((100vw - 768px)/(1920 - 768) * (60 - 35) + 35px);
   line-height: 1.3;
   margin-bottom: 40px;
   max-width: 82%;
@@ -561,6 +566,8 @@ button {
 
 .hiro__start {
   margin-bottom: 124px;
+  display: flex;
+  flex-wrap: nowrap;
 }
 
 .hero__input {
@@ -632,7 +639,7 @@ button {
   }
 
   .hiro__text {
-    flex: 0 0 59%;
+    flex: 0 0 50%;
   }
 
   .header__inner {
@@ -654,9 +661,18 @@ button {
   }
   .hiro__btn {
     width: 280px;
+    height: 48px;
+  }
+  .hiro__start {
+    flex-wrap: wrap;
   }
 }
 @media (max-width: 768px) {
+  .header {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
   .hiro__title {
     margin-bottom: 35px;    
   }
@@ -670,6 +686,16 @@ button {
   .hiro__about {
     gap: 30px;
     flex-direction: column;
+  }
+  .hiro__text {
+    flex: 100%;
+    padding-top: 60px;
+  }
+  .hiro__image {
+    display: none;
+  } 
+  .hiro__image_moby {
+    display: block;
   }
 }
 @media (max-width: 567px) {
