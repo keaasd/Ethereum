@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" href="favicon/favicon.ico" type="image/x-icon">
+  <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+  <meta name="keywords" content="Ethereum">
+  <meta name="description" content="Покупайте, торгуйте и храните">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <link href="https://myfonts.ru/myfonts?fonts=afuturicalt" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="style/normalize.css">
+  <link rel="stylesheet" href="style/style.css">
+  <script defer src="js/index.js"></script>
+  <script defer src="js/modal.js"></script>
+  <script defer src="js/btn-up.js"></script>
+  <script defer src="js/scroll.js"></script>
+  <script defer src="js/burger_menu.js"></script>
+  <title>Ethereum</title>
+</head>
+
+<body>
+  <header class="container">
+    <div class="header">
+      <a class="header__logo">
+        <img class="header__img" src="image/logo.svg" alt="">
+      </a>
+      <nav class="navigation">
+        <ul class="nav__list">
+          <li class="nav__items"><a class="nav__link" href="blank.html">Купить&nbsp;криптовалюты</a></li>
+          <li class="nav__items"><a class="nav__link" href="blank.html">Использование&nbsp;Ethereum</a></li>
+          <li class="nav__items"><a class="nav__link" href="blank.html">Обучение</a></li>
+          <li class="nav__items"><a class="nav__link" href="blank.html">Торговля</a></li>
+          <li class="nav__items"><a class="nav__link" href="blank.html">Финансы</a></li>
+        </ul>
+      </nav>
+      <div class="header__come-in">
+        <div class="header__inner">
+          <button class="header__open" type="button">Войти</button>
+          <button class="header__reg" type="button">Регистрация</button>
+        </div>
+        <button class="header__lang" type="button">RUS</button>
+        <button type="button" class="burger-btn__open">.</button>
+      </div>
+    </div>
+  </header>
+  <main>
+    <section class="hiro">
+      <div class="wrapper hiro_flx">
+        <div class="hiro__text">
+          <h1 class="hiro__title">Покупайте,&nbsp;торгуйте и храните&nbsp;с&nbsp;помощью Ethereum</h1>
+          <p class="hiro__description">Ethereum — это управляемая сообществом технология, обеспечивающая работу
+            криптовалюты «эфир» (ETH)</p>
+          <div class="hiro__start">
+            <input class="hero__input" type="text" placeholder="Эл.почта / номер телефона">
+            <button class="hiro__btn _modal-open" data-modal-open="modal-1" type="submit">Начать</button>
+          </div>
+          <ul class="hiro__about">
+            <li class="hiro__box">
+              <h2 class="hero__subtitle">$76 <span class="hero__subtitle_pd">млрд</span></h2>
+              <p class="hero__subtitle-text">Объем торгов на&nbsp;бирже за 24&nbsp;часа</p>
+            </li>
+            <li class="hiro__box_r">
+              <h2 class="hero__subtitle">90 <span class="hero__subtitle_pd"> млн</span></h2>
+              <p class="hero__subtitle-text">Зарегистрированных пользователей, которые нам доверяют</p>
+            </li>
+          </ul>
+        </div>
+        <div class="hiro__img">
+          <img class="hiro__image" src="image/cript_Deskt.svg" alt="Ethereum">
+          <!-- <img src="image/cript.png" alt="Ethereum"> -->
+        </div>
+      </div>
+    </section>
+  </main>
+  <!-- мобильное меню  -->
+  <div class="modal__mb">
+    <div class="modal__mb_window">
+      <div class="modal_box">
+        <div class="modal_logo"></div>
+        <button type="button" class="burger-btn__close"></button>
+      </div>
+      <div class="burger-link">
+        <a class="modal_link" href="#">Купить&nbsp;криптовалюты</a>
+        <a class="modal_link" href="#">Использование&nbsp;Ethereum</a>
+        <a class="modal_link" href="#">Обучение</a>
+        <a class="modal_link" href="#">Торговля</a>
+        <a class="modal_link" href="#">Финансы</a>
+      </div>
+      <div class="burger-reg">
+        <button class="header__open header__open_reg" type="button">Войти</button>
+          <button class="header__reg" type="button">Регистрация</button>
+      </div>
+    </div>
+  </div>
+  <!-- модальное окно -->
+  <div class="_modal" data-modal="modal-1">
+    <div class="modal-bg">
+      <div class="modal-body">
+        <button class="modal-close">
+          <!-- <img src="images/close.svg" alt="" /> -->
+        </button>
+        <div class="modal-content modal-callback">
+          <div class="modal-callback__title">Перезвоните нам!</div>
+          <div class="modal-callback__text">
+            Lorem ipsi nulla itaque provident, minima pariatur repellat
+            harum ad eligendi corrupti suscipit facere fugit nisi. Aut
+            adipisci quidem dignissimos nihil quasi, nemo corrupti recusandae.
+            Rerum molestias voluptates nemo, iusto pariatur, voluptatum
+            similique repellendus architecto inventore amet doloremque non ad
+            magnam aut
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <a href="#headerTop" class="to-up">&#8679;</a>
+</body>
+
+</html>
