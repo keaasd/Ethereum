@@ -491,7 +491,9 @@ button {
   transition: .3s ease-in-out;
   /* margin-right: calc((100vw - 768px)/(1920 - 768) * (100 - 30) + 30px); */
 }
-
+.hiro {
+  padding-bottom: 40px;
+}
 .header__reg:hover,
 .hiro__btn:hover {
   background: transparent;
