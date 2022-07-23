@@ -553,6 +553,7 @@ button {
   right: 0;
   object-fit: contain;
   z-index: -1;
+  animation: blur 8s infinite;
 }
 
 .hiro__text {
@@ -636,12 +637,29 @@ button {
 
 .burger-reg {
   margin-top: 20px;
+  font-size: 20px;
 }
 
 .header__open_reg {
   display: block;
   margin-top: 35px;
   margin-bottom: 20px;
+}
+
+@keyframes blur {
+  0% {
+    filter: blur(283px);
+  }
+
+
+  40% {
+    filter: blur(30px);
+  }
+
+
+  to {
+    filter: blur(283px);
+  }
 }
 
 /* ку ку  */
