@@ -2,7 +2,10 @@
 const modalBtns = document.querySelectorAll('._modal-open');
 const modals = document.querySelectorAll('._modal');
 const body = document.body;
-
+const modalWind = document.querySelector('.modal__mb_window')
+modalWind.addEventListener('click', () => {
+	body.classList.remove('_locked')	
+})
 function openModal(elem) {
 	elem.classList.add('_active');
 	body.classList.add('_locked')
@@ -13,6 +16,7 @@ function closeModal(e) {
 		e.target.closest('._modal').classList.remove('_active');
 		body.classList.remove('_locked')
 	}
+
 }
 
 modalBtns.forEach(btn => {

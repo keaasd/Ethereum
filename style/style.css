@@ -555,7 +555,7 @@ button {
   right: 0;
   object-fit: contain;
   z-index: -1;
-  animation: blur 8s infinite;
+  animation: blur 5s infinite;
 }
 
 .hiro__text {
@@ -654,10 +654,15 @@ button {
   }
 
 
-  40% {
+  20% {
+    filter: blur(80px);
+  }
+  20% {
     filter: blur(30px);
   }
-
+  80% {
+    filter: blur(80px);
+  }
 
   to {
     filter: blur(283px);
