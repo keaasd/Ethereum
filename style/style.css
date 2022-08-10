@@ -867,6 +867,12 @@ button {
   .hero__subtitle {
     margin-bottom: 7px;
   }
+  .hero__input {
+    max-width: 100%;
+  }
+  .hiro__btn {
+    max-width: 100%;
+  }
 }
 
 /* font-size: calc((100vw - 768px)/(1200 - 768) * (18 - 14) + 14px); */
